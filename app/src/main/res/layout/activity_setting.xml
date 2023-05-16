@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity"
+    android:background="@drawable/crystal">
+    <TextView
+        android:id="@+id/todayfes"
+        android:layout_marginTop="56dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="35dp"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:text="SETTING"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/linesetting"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_below="@id/todayfes"
+        android:layout_gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="35dp"
+        android:background="#08617f" />
+    <TextView
+
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/corner_viewall"
+        android:layout_marginRight="42dp"
+        android:textSize="10dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="Edit"
+        android:layout_above="@id/linesetting"
+        android:layout_width="50dp"
+        android:layout_height="15dp"/>
+    <TextView
+        android:id="@+id/sharefrnd"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linesetting"
+        android:layout_marginLeft="35dp"
+        android:text="SHARE FRIENDS"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/notification"
+        android:layout_marginTop="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sharefrnd"
+        android:layout_marginLeft="35dp"
+        android:text="NOTIFICATION"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notification"
+        android:layout_alignEnd="@+id/notification"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="67dp"
+        android:text="SOUND"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/theme"
+        android:layout_marginTop="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sound"
+        android:layout_marginLeft="35dp"
+        android:text="THEME"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/apppass"
+        android:layout_marginTop="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/theme"
+        android:layout_marginStart="35dp"
+        android:text="APP PASSWORD"
+        android:textColor="#08617f"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/fingerprintlock"
+        android:layout_marginTop="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/apppass"
+        android:layout_marginStart="35dp"
+        android:text="FINGER PRINT LOCK(On/Off)"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/termndcondi"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:layout_below="@id/fingerprintlock"
+        android:layout_marginStart="35dp"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:text="TERM AND CONDITION"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/lineterm"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/termndcondi"
+        android:layout_gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="35dp"
+        android:background="#08617f" />
+    <TextView
+
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/corner_viewall"
+        android:layout_marginRight="42dp"
+        android:textSize="10dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="Edit"
+        android:layout_above="@id/lineterm"
+        android:layout_width="50dp"
+        android:layout_height="15dp"/>
+    <TextView
+        android:id="@+id/upgrade"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineterm"
+        android:layout_marginLeft="35dp"
+        android:text="Upgrade"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/sharefrd"
+        android:layout_marginTop="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upgrade"
+        android:layout_marginLeft="35dp"
+        android:text="Share Friends"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/privacypolicy"
+        android:layout_marginTop="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sharefrd"
+        android:layout_marginLeft="35dp"
+        android:text="Privacy Policy"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/termndcondservi"
+        android:layout_marginTop="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/privacypolicy"
+        android:layout_marginLeft="35dp"
+        android:text="Term &amp; Condition, Service"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/helpsup"
+        android:layout_marginTop="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/termndcondservi"
+        android:layout_marginLeft="35dp"
+        android:text="Help and Support (Email Us)"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/helpsup"
+        android:layout_marginTop="192dp"
+        android:background="#08617f">
+    </View>
+    <LinearLayout
+        android:layout_below="@id/helpsup"
+        android:orientation="horizontal"
+        android:layout_marginTop="170dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="34dp"
+            android:textSize="30dp"
+            android:text="SETTING"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/setting"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

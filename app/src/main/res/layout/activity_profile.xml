@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/crystal">
+
+
+    <TextView
+        android:id="@+id/addphoto"
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/profileh"
+        android:gravity="center"
+        android:text="Add
+                    Photo"
+        android:textColor="#08617f"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/name"
+        android:textColor="#08617f"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="110dp"
+        android:layout_below="@id/addphoto"
+        android:textSize="25dp"
+        android:text="Customer Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/mobile"
+        android:layout_marginLeft="140dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="Mobile Number"
+        android:layout_below="@id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/email"
+        android:layout_marginLeft="130dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/mobile"
+        android:text="........@gmail.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/todayfes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="16dp"
+        android:text="BASIC DETAILS"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/lineTfes"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/todayfes"
+        android:layout_gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="35dp"
+        android:background="#08617f" />
+    <TextView
+
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/corner_viewall"
+        android:layout_marginRight="42dp"
+        android:textSize="10dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="Edit"
+        android:layout_above="@id/lineTfes"
+        android:layout_width="45dp"
+        android:layout_height="13dp"/>
+    <TextView
+        android:id="@+id/name2"
+        android:layout_below="@id/lineTfes"
+        android:textStyle="bold"
+        android:textColor="#08617f"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:textSize="20dp"
+        android:text="NAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/pro"
+        android:layout_below="@id/lineTfes"
+        android:textStyle="bold"
+        android:textColor="#08617f"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="98dp"
+        android:textSize="16dp"
+        android:text="(Proprieter, Personal or Business etc)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+
+        android:layout_marginLeft="35dp"
+        android:textStyle="bold"
+        android:textColor="#08617f"
+        android:id="@+id/busilogo"
+        android:textSize="20dp"
+        android:text="LOGO"
+        android:layout_below="@id/name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_below="@id/pro"
+        android:textStyle="bold"
+        android:id="@+id/business"
+        android:textColor="#08617f"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="92dp"
+        android:textSize="16dp"
+        android:text="(Business/Political)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+
+        android:layout_marginLeft="35dp"
+        android:textStyle="bold"
+        android:textColor="#08617f"
+        android:id="@+id/cont"
+        android:textSize="20dp"
+        android:text="CONTACT"
+        android:layout_below="@id/busilogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_below="@id/business"
+        android:textStyle="bold"
+        android:textColor="#08617f"
+       android:layout_marginTop="5dp"
+        android:layout_marginLeft="130dp"
+        android:textSize="16dp"
+        android:text="(Home/Business/Office)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+
+        android:layout_marginLeft="35dp"
+        android:textStyle="bold"
+        android:textColor="#08617f"
+        android:id="@+id/email1"
+        android:textSize="20dp"
+        android:text="EMAIL"
+        android:layout_below="@id/cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+
+        android:layout_marginLeft="35dp"
+        android:textStyle="bold"
+        android:textColor="#08617f"
+        android:id="@+id/web"
+        android:textSize="20dp"
+        android:text="WEBSITE"
+        android:layout_below="@id/email1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+
+        android:layout_marginLeft="35dp"
+        android:textStyle="bold"
+        android:textColor="#08617f"
+        android:id="@+id/address"
+        android:textSize="20dp"
+        android:text="ADDRESS"
+        android:layout_below="@id/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_below="@id/web"
+        android:textStyle="bold"
+        android:textColor="#08617f"
+
+        android:layout_marginLeft="130dp"
+        android:textSize="16dp"
+        android:text="(Home/Business/Office)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/security"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="16dp"
+        android:text="SECURITY"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <View
+        android:id="@+id/linesecu"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/security"
+        android:layout_gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="35dp"
+        android:background="#08617f" />
+    <TextView
+
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/corner_viewall"
+        android:layout_marginRight="42dp"
+        android:textSize="10dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="Edit"
+        android:layout_above="@id/linesecu"
+        android:layout_width="45dp"
+        android:layout_height="13dp"/>
+    <TextView
+        android:id="@+id/logareg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linesecu"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="16dp"
+        android:text="LOGIN and REGISTER"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/chngpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logareg"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        android:text="CHANGE PASSWORD"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/frgtpass"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chngpass"
+        android:layout_marginLeft="35dp"
+        android:text="FORGOT PASSWORD"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/verification"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frgtpass"
+        android:layout_marginLeft="35dp"
+        android:text="2 STEP VERIFICATION"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/smsalert"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verification"
+        android:layout_marginLeft="35dp"
+        android:text="SMS ALERT"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/smsalert"
+        android:layout_marginTop="55dp"
+        android:background="#08617f">
+    </View>
+
+    <LinearLayout
+    android:layout_below="@id/smsalert"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="34dp"
+        android:textSize="30dp"
+        android:text="PROFILE"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+</LinearLayout>
+
+</RelativeLayout>

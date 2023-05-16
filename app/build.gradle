@@ -1,0 +1,64 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 31
+    buildToolsVersion '30.0.2'
+
+    defaultConfig {
+        applicationId "com.example.dhanshree"
+        minSdkVersion 29
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //Volley dependency
+    implementation 'com.android.volley:volley:1.2.1'
+    //Gson dependency
+    implementation 'com.google.code.gson:gson:2.8.9'
+    //Animation dependency
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+    //Lottie animation
+    implementation 'com.airbnb.android:lottie:4.2.2'
+    //EditText dependency
+    implementation 'com.github.OpenCraft:AnimatedExpandableEditText:-SNAPSHOT'
+    //Custom EditText dependency
+    implementation 'com.libizo:customedittext:1.0.6'
+    //Button dependency
+    implementation "com.github.skydoves:elasticviews:2.1.0"
+    //Floating search view
+    implementation 'com.github.arimorty:floatingsearchview:2.1.1'
+    //Circular Image View
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //CardView
+    implementation "androidx.cardview:cardview:1.0.0"
+    // PinView Dependency
+    implementation 'com.chaos.view:pinview:1.4.4'
+    // Rounded ImageView for border in image
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+}

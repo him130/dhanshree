@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlanPaymentActivity"
+    android:background="@drawable/crystal">
+
+    <TextView
+        android:id="@+id/todayfes"
+        android:layout_marginTop="36dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="35dp"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:text="PLANS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/lineplan"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_below="@id/todayfes"
+        android:layout_gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="35dp"
+        android:background="#08617f" />
+    <TextView
+
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/corner_viewall"
+        android:layout_marginRight="42dp"
+        android:textSize="10dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="Edit"
+        android:layout_above="@id/lineplan"
+        android:layout_width="50dp"
+        android:layout_height="15dp"/>
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="380dp"
+        android:id="@+id/planimg"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lineplan"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/plans" />
+    <TextView
+
+        android:id="@+id/details"
+        android:layout_marginTop="13dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="35dp"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:layout_below="@id/planimg"
+        android:text="DETAILS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/derail"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/planimg"
+        android:layout_gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginRight="35dp"
+        android:background="#08617f" />
+    <TextView
+
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/corner_viewall"
+        android:layout_marginRight="42dp"
+        android:textSize="10dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="Edit"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/planimg"
+        android:layout_width="50dp"
+        android:layout_height="15dp"/>
+    <TextView
+        android:id="@+id/actpkgplan"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/derail"
+        android:layout_marginLeft="35dp"
+        android:text="ACTIVE PACKAGE PLAN"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/transhistory"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actpkgplan"
+        android:layout_marginLeft="35dp"
+        android:text="TRANSACTION HISTORY"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/advancepayments"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transhistory"
+        android:layout_marginLeft="35dp"
+        android:text="ADVANCE PAYMENTS"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/billsdwnd"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/advancepayments"
+        android:layout_marginLeft="35dp"
+        android:text="BILLS DOWNLOAD"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/chngplans"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/billsdwnd"
+        android:layout_marginLeft="35dp"
+        android:text="CHANGE PLANS"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/referearnmeney"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chngplans"
+        android:layout_marginLeft="35dp"
+        android:text="REFER &amp; EARN MONEY"
+        android:textColor="#08617f"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/referearnmeney"
+        android:layout_marginTop="25dp"
+        android:background="#08617f">
+    </View>
+    <LinearLayout
+        android:layout_below="@id/referearnmeney"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="34dp"
+            android:textSize="30dp"
+            android:text="PLAN &amp; PAYMENTS"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/planandpayment"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

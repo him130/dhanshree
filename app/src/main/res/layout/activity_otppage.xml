@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPPageActivity"
+    android:background="@drawable/crystal">
+
+    <View
+        android:id="@+id/relativeBlue"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/upper_page" />
+
+    <ImageView
+        android:onClick="otpp"
+        android:id="@+id/arrow"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arrow"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter OTP"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Please enter 4 digit Code sent to your registered        Mobile number xxx xxx 1234"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:id="@+id/card"
+        android:layout_below="@id/signin"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="viewStart"
+        android:background="#fefefe"
+        app:cardCornerRadius="40dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="50dp">
+        <LinearLayout
+            android:background="@drawable/back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.chaos.view.PinView
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/firstPinView"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:hint="Hint"
+                android:inputType="phone"
+                android:itemBackground="@drawable/back"
+                android:padding="10dp"
+                android:textColor="#08617f"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cursorColor="@color/gray_active_icon"
+                app:cursorWidth="2dp"
+                app:hideLineWhenFilled="true"
+                app:itemCount="4"
+                app:itemHeight="48dp"
+                app:itemRadius="4dp"
+                app:itemSpacing="0dp"
+                app:itemWidth="48dp"
+                app:lineColor="@color/gray_active_icon"
+                app:lineWidth="2dp"
+                app:viewType="rectangle" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:onClick="submit"
+                android:text="Submit"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_radius"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Not received code?"
+                    android:textColor="#064e64"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Resend"
+                    android:textColor="#064e64"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+    <LinearLayout
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/card"
+        android:id="@+id/login_follow"
+        android:orientation="horizontal"
+        android:layout_marginTop="230dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_gravity="center"
+            android:background="#363435"
+            android:layout_marginLeft="45dp"
+            android:layout_width="90dp"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="Follow us"
+            android:textColor="#363435"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_gravity="center"
+            android:background="#363435"
+            android:layout_marginLeft="10dp"
+            android:layout_width="90dp"
+            android:layout_height="1dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/link_login"
+        android:layout_marginLeft="27dp"
+        android:layout_below="@id/login_follow"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="70dp"
+            android:src="@drawable/insta"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/fb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/youtube"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/browser"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="80dp"
+        android:layout_below="@id/link_login"
+        android:background="#08617f"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+</RelativeLayout>
